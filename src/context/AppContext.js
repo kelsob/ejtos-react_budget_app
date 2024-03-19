@@ -70,6 +70,13 @@ export const AppReducer = (state, action) => {
             return {
                 ...state
             }
+        case 'SET_CURRENCY':
+            return {
+                ...state,
+                currency: action.payload, // payload contains the new currency symbol
+            };
+
+
 
         default:
             return state;
